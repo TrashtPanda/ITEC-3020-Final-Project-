@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Digital – About</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .team-member {
+      text-align: center;
+      background: var(--bg-secondary);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <h1>About Apex Digital</h1>
+    <section>
+      <h2>Our Background</h2>
+      <p>Founded in 2010, Apex Digital has grown from a small startup to a trusted partner for enterprises worldwide. We specialize in web development, cloud solutions, and AI‑driven analytics.</p>
+      <h2>Mission</h2>
+      <p>To democratise technology and make digital transformation accessible to every business.</p>
+      <h2>Core Values</h2>
+      <ul>
+        <li><strong>Integrity</strong> – Honesty in every interaction.</li>
+        <li><strong>Innovation</strong> – Always pushing boundaries.</li>
+        <li><strong>Customer‑Centricity</strong> – Your success is our priority.</li>
+        <li><strong>Excellence</strong> – Delivering quality beyond expectations.</li>
+      </ul>
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="assets/team1.jpg" alt="Raiyan Chowdhury" />
+          <h3>Raiyan Chowdhury</h3>
+          <p>CEO &amp; Founder</p>
+        </div>
+        <div class="team-member">
+          <img src="assets/team2.jpg" alt="Ramisa Mustafa" />
+          <h3>Ramisa Mustafa</h3>
+          <p>CTO</p>
+        </div>
+        <div class="team-member">
+          <img src="assets/team3.jpg" alt="Bill Gates" />
+          <h3>Bill Gates</h3>
+          <p>Lead Developer</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

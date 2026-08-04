@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Digital – Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .service-item {
+      flex: 1 1 200px;
+      background: var(--bg-secondary);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .service-item .icon {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <h1>Our Services</h1>
+    <div class="services-list">
+      <div class="service-item">
+        <span class="icon">🌐</span>
+        <h3>Web Development</h3>
+        <p>Responsive, fast, and scalable websites.</p>
+      </div>
+      <div class="service-item">
+        <span class="icon">☁️</span>
+        <h3>Cloud Solutions</h3>
+        <p>AWS, Azure, and hybrid cloud architecture.</p>
+      </div>
+      <div class="service-item">
+        <span class="icon">🤖</span>
+        <h3>AI &amp; Analytics</h3>
+        <p>Data‑driven insights and machine learning.</p>
+      </div>
+      <div class="service-item">
+        <span class="icon">📱</span>
+        <h3>Mobile App Development</h3>
+        <p>Native and cross‑platform apps.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin:2rem 0;">
+      <a href="assets/company-brochure.pdf" download class="cta-button" style="background:var(--primary);">Download Brochure (PDF)</a>
+    </p>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

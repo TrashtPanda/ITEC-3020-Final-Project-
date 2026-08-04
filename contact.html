@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Digital – Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .contact-form {
+      flex: 1 1 300px;
+    }
+    .contact-form label {
+      display: block;
+      margin: 0.8rem 0 0.2rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 0.3rem;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .contact-form .error-msg {
+      color: #d9534f;
+      font-size: 0.85rem;
+      display: none;
+      margin-top: 0.2rem;
+    }
+    .contact-form .error-msg.visible {
+      display: block;
+    }
+    .contact-form button {
+      margin-top: 1rem;
+      padding: 0.6rem 2rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .contact-form .success-msg {
+      display: none;
+      padding: 1rem;
+      background: #5cb85c;
+      color: #fff;
+      border-radius: 0.3rem;
+      margin-top: 1rem;
+    }
+    .social-links {
+      flex: 1 1 200px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0.5rem 0;
+      font-size: 2rem;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .social-links a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <h1>Contact Us</h1>
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <form id="contact-form">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" />
+          <span class="error-msg" id="name-error">Please enter your name.</span>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" />
+          <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+
+          <label for="message">Message * (min 20 characters)</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <span class="error-msg" id="message-error">Message must be at least 20 characters.</span>
+
+          <button type="submit">Send Message</button>
+          <div class="success-msg" id="success-msg">Thank you! Your message has been sent.</div>
+        </form>
+      </div>
+      <div class="social-links">
+        <h3>Connect with us</h3>
+        <a href="#" aria-label="LinkedIn">🔗</a>
+        <a href="#" aria-label="GitHub">🐙</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/validate.js"></script>
+</body>
+</html>

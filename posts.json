@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Building a Theme Switcher with localStorage",
+    "date": "2026-07-28",
+    "summary": "How I implemented a persistent light/dark mode toggle using CSS custom properties and localStorage.",
+    "category": "Development",
+    "content": "This feature was part of Phase 2, Part 1. I added a toggle button that switches between light and dark themes by adding a data-theme attribute to the body. The preference is saved to localStorage so it persists across page loads. I used CSS variables for colors to make the switch seamless. The biggest challenge was ensuring the toggle button works after the header is loaded dynamically, but I solved that by re-attaching the event listener after the header injection."
+  },
+  {
+    "id": 2,
+    "title": "Dynamic Header and Footer with Fetch API",
+    "date": "2026-07-29",
+    "summary": "Using JavaScript to load shared header and footer components from separate HTML files to avoid duplication.",
+    "category": "JavaScript",
+    "content": "In Part 2, I moved the navigation and footer markup into components/header.html and components/footer.html. Then I used fetch() to load them into placeholders on each page. This reduces duplication and makes maintenance easier. One issue was that the theme toggle button is inside the header, so I had to re‑initialize the theme logic after the header loads. I also learned that fetch requires a server environment, so I used VS Code Live Server."
+  },
+  {
+    "id": 3,
+    "title": "Rendering Blog Posts from JSON",
+    "date": "2026-07-30",
+    "summary": "Loading blog posts dynamically from a JSON file, sorting them by date, and displaying them with a 'Latest Post' badge.",
+    "category": "Data",
+    "content": "For Part 3, I created a posts.json file with four entries. On the blog page, JavaScript fetches the data, sorts posts by date (newest first), and renders each as a card. I used the Date object to format the date nicely. The most recent post gets a badge. This approach makes it easy to add new posts without touching HTML. I also ensured that the filter on the blog page works with these dynamically created cards."
+  },
+  {
+    "id": 4,
+    "title": "Client‑Side Form Validation with Inline Errors",
+    "date": "2026-07-31",
+    "summary": "Implementing real‑time validation for the contact form with clear error messages and a success state.",
+    "category": "UX",
+    "content": "In Part 4, I added validation to the contact form. I intercept the submit event, check each field (name not empty, valid email, message at least 20 characters), and display inline errors. Errors clear as the user types. On successful validation, the form is hidden and a success message appears. I also used a regular expression to validate email. This improved the user experience significantly, and I learned about form event handling and DOM manipulation."
+  }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Digital – Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .blog-card {
+      background: var(--bg-secondary);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.2s;
+    }
+    .blog-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .blog-card .badge {
+      background: #ffc107;
+      color: #000;
+      padding: 0.2rem 0.6rem;
+      border-radius: 1rem;
+      font-size: 0.7rem;
+      font-weight: bold;
+      margin-left: 0.5rem;
+    }
+    .blog-card .date {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .blog-card .category {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.2rem 0.8rem;
+      border-radius: 1rem;
+      font-size: 0.7rem;
+    }
+    #blog-filter-input {
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+      border-radius: 0.3rem;
+      background: var(--bg);
+      color: var(--text);
+    }
+    #blog-no-results {
+      display: none;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <h1>Blog &amp; News</h1>
+    <input type="text" id="blog-filter-input" placeholder="Filter posts by title or category..." />
+    <div id="blog-no-results">No blog posts match your search.</div>
+    <div id="blog-container" class="blog-grid"></div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>
